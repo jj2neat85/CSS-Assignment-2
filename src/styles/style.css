@@ -68,3 +68,18 @@ svg {
     font-size: 1.4rem;
     font-weight: 600;
 }
+
+/* Hero */
+
+.hero {
+
+}
+
+.img-background {
+    /* background-image: url('../images/Box.png'); */
+    background-size: cover;
+}
+
+.hero-inner {
+
+}
