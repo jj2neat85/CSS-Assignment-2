@@ -12,6 +12,7 @@
     --line-color: #000000;
 
     --max-width: 1200px;
+    --radius: 8px;
 }
 
 /* Resets */
@@ -72,51 +73,93 @@ svg {
 }
 
 /* Hero */
-
 .hero {
- padding: 72px;
+    padding: 56px 0 72px;
 }
 
 .img-background {
-    /* background-image: url('../images/Box.png'); */
+    background-image: url('../images/Background.png');
     background-size: cover;
 }
 
 .hero-inner {
-    display: flex;
-    align-items: center;
+    display: grid;
 }
 
 .hero-card {
-    flex: 1;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 300px;
     align-items: center;
     gap: 50px;
     background: var(--cream);
+    color: var(--text-color);
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
 }
 
-.hero-text-block {
-    flex: 1;
-}
 
 .hero-subtitle {
     text-transform: uppercase;
-    color: var(--accent)
+    letter-spacing: 0.15em;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--accent);
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 10px;
 }
 
 .subheading {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 500;
     line-height: 1.2;
+    color: var(--text-soft);
+    margin-bottom: 16px;
 }
 
 .hero-description {
-    
+    color: var(--text-soft);
+    max-width: 40ch;
+    margin-bottom: 24px;
 }
 
 .hero-img {
-    flex: 0 0 auto;
-    width: 300px;
+    width: 100%;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
 
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: var(--radius);
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-hero {
+    padding: 14px 32px;
+    background: var(--accent);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero:hover {
+    background: #cf2a21;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
 }
