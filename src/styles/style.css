@@ -2,6 +2,8 @@
 
     /* Main colors */
     --background-color: #f7f1df;
+    --cream: #fbf6e9;
+    --accent: #e63329;
 
     /* Text colors */
     --text-color: #1c1c1c;
@@ -72,7 +74,7 @@ svg {
 /* Hero */
 
 .hero {
-
+ padding: 72px;
 }
 
 .img-background {
@@ -81,5 +83,40 @@ svg {
 }
 
 .hero-inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: var(--cream);
+}
+
+.hero-text-block {
+    flex: 1;
+}
+
+.hero-subtitle {
+    text-transform: uppercase;
+    color: var(--accent)
+}
+
+.subheading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-description {
+    
+}
+
+.hero-img {
+    flex: 0 0 auto;
+    width: 300px;
+    aspect-ratio: 1 / 1;
 
 }
