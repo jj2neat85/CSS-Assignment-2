@@ -25,28 +25,46 @@ body {
     color: var(--text-color);
 }
 
+/* Custom fonts */
+h1, h2, .brand {
+    font-family: "Fredoka", "Poppins", sans-serif;
+}
+
+/* Centered column */
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
 /* Header */
 
 .site-header {
-
     border-bottom: 1px solid var(--line-color);
-
 }
 
 .header-inner {
-
     display: flex;
     align-items: center;
     gap: 16px;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.logo {
-    width: 100px;
-    height: 80px;
+.logo-img {
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
-.logo-text {
-    font-family: "Fredoka", "Poppins", sans-serif;
+.brand-text {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
 }
