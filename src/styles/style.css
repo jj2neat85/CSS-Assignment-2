@@ -1,0 +1,52 @@
+:root {
+
+    /* Main colors */
+    --background-color: #f7f1df;
+
+    /* Text colors */
+    --text-color: #1c1c1c;
+    --text-soft: #444444;
+
+    --line-color: #000000;
+
+    --max-width: 1200px;
+}
+
+/* Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+
+.site-header {
+
+    border-bottom: 1px solid var(--line-color);
+
+}
+
+.header-inner {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: "Fredoka", "Poppins", sans-serif;
+}
