@@ -186,3 +186,19 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+
+.product-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
