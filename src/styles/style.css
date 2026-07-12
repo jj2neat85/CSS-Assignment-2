@@ -30,7 +30,7 @@ body {
 }
 
 /* Custom fonts */
-h1, h2, .brand, .section-title {
+h1, h2, .brand, .section-title, legend {
     font-family: "Fredoka", "Poppins", sans-serif;
 }
 
@@ -202,3 +202,36 @@ h1 {
     border-radius: 10px;
 }
 
+/* Footer */
+
+.site-footer {
+
+}
+
+.footer-inner {
+
+}
+
+.footer-info {
+
+}
+
+.footer-text {
+
+}
+
+.company-address {
+
+}
+
+.footer-contact {
+
+}
+
+.contact-card {
+
+}
+
+.contact-form {
+    
+}
