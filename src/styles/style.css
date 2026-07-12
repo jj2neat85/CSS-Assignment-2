@@ -83,6 +83,7 @@ svg {
 .img-background {
     background-image: url('../images/Background.png');
     background-size: cover;
+    background-position: center;
 }
 
 .hero-inner {
@@ -185,7 +186,8 @@ h1 {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* Drops card to the next row if below 250px */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
@@ -305,4 +307,34 @@ h1 {
 .footer-info .logo-img {
     width: 200px;
     height: auto;
+}
+
+/* Final commit */
+
+@media (max-width: 768px) {
+    
+    /* Hero */
+    .hero-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 24px; 
+        text-align: center;
+    }
+    .hero-description {
+        margin: 0 auto 24px;
+    }
+    .hero-img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 32px;
+    }
+    .footer-info .logo-img {
+        margin: 0 auto;
+    }
 }
